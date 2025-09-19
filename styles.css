@@ -33,4 +33,7 @@ body {
   margin-bottom: 5px;
   transition: background 0.3s;
 }
+.accordion label:hover {
+  background: #444;
+}
 
