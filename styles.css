@@ -36,4 +36,12 @@ body {
 .accordion label:hover {
   background: #444;
 }
+.accordion .content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  background: #f9f9f9;
+  border-radius: 5px;
+  padding: 0 15px;
+}
 
