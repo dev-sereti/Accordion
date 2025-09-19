@@ -5,6 +5,7 @@ body {
   justify-content: center;
   padding: 30px;
 }
+
 .accordion {
   background: #fff;
   border-radius: 10px;
@@ -12,31 +13,35 @@ body {
   width: 500px;
   padding: 20px;
 }
+
 .accordion h2 {
   margin-bottom: 15px;
 }
+
 .accordion-item {
   border-bottom: 1px solid #ddd;
-}
-.accordion input {
-  display: none;
+  margin-bottom: 5px;
 }
 
-.accordion label {
-  display: block;
+.accordion-header {
+  width: 100%;
   padding: 15px;
+  text-align: left;
   cursor: pointer;
   font-weight: bold;
   background: #000;
   color: #fff;
+  border: none;
+  outline: none;
   border-radius: 5px;
-  margin-bottom: 5px;
   transition: background 0.3s;
 }
-.accordion label:hover {
+
+.accordion-header:hover {
   background: #444;
 }
-.accordion .content {
+
+.accordion-content {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease;
@@ -44,7 +49,9 @@ body {
   border-radius: 5px;
   padding: 0 15px;
 }
-.accordion input:checked ~ .content {
+
+/* Open state */
+.accordion-item.active .accordion-content {
   max-height: 200px;
   padding: 15px;
 }
