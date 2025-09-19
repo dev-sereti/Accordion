@@ -44,4 +44,7 @@ body {
   border-radius: 5px;
   padding: 0 15px;
 }
-
+.accordion input:checked ~ .content {
+  max-height: 200px;
+  padding: 15px;
+}
