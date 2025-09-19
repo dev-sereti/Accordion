@@ -21,3 +21,16 @@ body {
 .accordion input {
   display: none;
 }
+
+.accordion label {
+  display: block;
+  padding: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  background: #000;
+  color: #fff;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  transition: background 0.3s;
+}
+
