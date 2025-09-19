@@ -5,6 +5,8 @@ const accordionHeaders = document.querySelectorAll(".accordion-header");
 accordionHeaders.forEach(header => {
   header.addEventListener("click", () => {
 
+    const item = header.parentElement; //Find the parent accordion item of the clicked header
+
     
   });
 });
