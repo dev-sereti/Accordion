@@ -15,3 +15,6 @@ body {
 .accordion h2 {
   margin-bottom: 15px;
 }
+.accordion-item {
+  border-bottom: 1px solid #ddd;
+}
